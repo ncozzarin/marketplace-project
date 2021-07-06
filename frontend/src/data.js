@@ -1,0 +1,68 @@
+const data = {
+    products: [
+        {
+            _id:'1',
+            name:'Mars Orbiter 80w',
+            category:'Lights',
+            image:'./img/led1.png',
+            price:25000,
+            brand:'Mars',
+            rating:4,
+            numReviews: 10,
+            description: 'High CRI led light',
+        },
+        {
+            _id:'1',
+            name:'Mars Orbiter 80w',
+            category:'Lights',
+            image:'./img/led1.png',
+            price:25000,
+            brand:'Mars',
+            rating:4,
+            numReviews: 10,
+            description: 'High CRI led light',
+        },
+        {
+            _id:'1',
+            name:'Mars Orbiter 80w',
+            category:'Lights',
+            image:'./img/led1.png',
+            price:25000,
+            brand:'Mars',
+            rating:4,
+            numReviews: 10,
+            description: 'High CRI led light',
+        },
+        {
+            _id:'1',
+            name:'Mars Orbiter 80w',
+            category:'Lights',
+            image:'./img/led1.png',
+            price:25000,
+            brand:'Mars',
+            rating:4,
+            numReviews: 10,
+            description: 'High CRI led light',
+        },
+        {
+            _id:'1',
+            name:'Mars Orbiter 80w',
+            category:'Lights',
+            image:'./img/led1.png',
+            price:25000,
+            brand:'Mars',
+            rating:4,
+            numReviews: 'High CRI led light'
+        },
+        {
+            _id:'1',
+            name:'Mars Orbiter 80w',
+            category:'Lights',
+            image:'./img/led1.png',
+            price:25000,
+            brand:'Mars',
+            rating:4,
+            numReviews: 'High CRI led light'
+        },
+    ]
+}
