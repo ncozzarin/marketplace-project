@@ -1,7 +1,11 @@
-
+import React from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="grid-container">
       <header className="row">
         <div>
@@ -13,131 +17,13 @@ function App() {
         </div>
       </header>
       <main>
-        <div className="row center">
-          <div className="card">
-            <a href="product.html">
-              <img className="medium" src="img/led1.png" alt="High CRI led 500W"/>
-            </a>
-            <div className = "card-body">
-                <a href="product.html">
-                  <h2>Mars Orbiter Led</h2>
-                </a>
-                <div className="rating">
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                </div>
-                <div className= "price">
-                  $50.000
-                </div>
-            </div>
-          </div>
-          <div className="card">
-            <a href="product.html">
-              <img className="medium" src="img/led1.png" alt="High CRI led 500W"/>
-            </a>
-            <div className = "card-body">
-                <a href="product.html">
-                  <h2>Mars Orbiter Led</h2>
-                </a>
-                <div className="rating">
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                </div>
-                <div className= "price">
-                  $50.000
-                </div>
-            </div>
-          </div>
-          <div className="card">
-            <a href="product.html">
-              <img className="medium" src="img/led1.png" alt="High CRI led 500W"/>
-            </a>
-            <div className = "card-body">
-                <a href="product.html">
-                  <h2>Mars Orbiter Led</h2>
-                </a>
-                <div className="rating">
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                </div>
-                <div className= "price">
-                  $50.000
-                </div>
-            </div>
-          </div>
-          <div className="card">
-            <a href="product.html">
-              <img className="medium" src="img/led1.png" alt="High CRI led 500W"/>
-            </a>
-            <div className = "card-body">
-                <a href="product.html">
-                  <h2>Mars Orbiter Led</h2>
-                </a>
-                <div className="rating">
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                </div>
-                <div className= "price">
-                  $50.000
-                </div>
-            </div>
-          </div>
-          <div className="card">
-            <a href="product.html">
-              <img className="medium" src="img/led1.png" alt="High CRI led 500W"/>
-            </a>
-            <div className = "card-body">
-                <a href="product.html">
-                  <h2>Mars Orbiter Led</h2>
-                </a>
-                <div className="rating">
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                </div>
-                <div className= "price">
-                  $50.000
-                </div>
-            </div>
-          </div>
-          <div className="card">
-            <a href="product.html">
-              <img className="medium" src="img/led1.png" alt="High CRI led 500W"/>
-            </a>
-            <div className = "card-body">
-                <a href="product.html">
-                  <h2>Mars Orbiter Led</h2>
-                </a>
-                <div className="rating">
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                  <span><i className="fa fa-star"></i></span>
-                </div>
-                <div className= "price">
-                  $50.000
-                </div>
-            </div>
-          </div>
-        </div>
+        <Route path="/product/:id" component={ProductScreen} exact></Route>
+        <Route path="/" component={HomeScreen} exact></Route>
+
       </main>
       <footer className="row center">All right reserved</footer>
-    </div>
+      </div>
+      </BrowserRouter>
   );
 }
 
