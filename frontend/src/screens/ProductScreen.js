@@ -11,12 +11,12 @@ export default function ProductScreen(props){
     }
     return(
         <div>
-            <Link to="/"></Link>
+            <Link to="/">Back ro results</Link>
             <div className="row top">
                 <div class="col-2">
                     <img className="large" src={product.image} alt={product.name}></img>
                 </div>
-                <div className='col-1'>
+                <div className="col-1">
                     <ul>
                         <li>
                             <h1>{product.name}</h1>
@@ -33,7 +33,7 @@ export default function ProductScreen(props){
                         </li>
                     </ul>
                 </div>
-                <div className='col-1'>
+                <div className="col-1">
                     <div className="card card-body">
                         <ul>
                             <li>
@@ -44,9 +44,9 @@ export default function ProductScreen(props){
                             </li>
                             <li>
                                 <div className="row">
-                                    <div>Status</div>
+                                    <div>Status:  </div>
                                     <div>
-                                        {product.countInStock > 0 ? (
+                                        {product.contentInStock > 0 ? (
                                             <span className="success"> In Stock</span>
                                         ) : (
                                             <span className = "error"> Unavailable</span>
