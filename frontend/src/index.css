@@ -4,9 +4,11 @@
 
 :root{
   --main-bg-color: #2b4d2b;
+  --main-errorbg-color: #a02020;
   --main-hover-color: #8f1d81;
   --main-clear200-color: #ffffff;
-  --main-clear400-color: #c0c0c0;
+  --main-clear600-color: #c0c0c0;
+  --main-clear400-color: #e0e0ff;
   --rating-color: #f0c040;
   --main-success: #20a020;
   --main-error: #a02020;
@@ -201,4 +203,23 @@ img.large{
 
 .error{
   color: var(--main-error);
+}
+
+.alert{
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: o.5rem;
+
+}
+
+.alert-info{
+  color: var(--main-hover-color);
+  background-color: var(--main-clear400-color);
+
+}
+
+.alert-danger{
+  color: var(--main-error);
+  background-color: var(--main-errorbg-color);
+
 }
