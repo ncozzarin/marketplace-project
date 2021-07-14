@@ -1,4 +1,4 @@
-import { PRODUCT_LIST_FAIL, PRODUCT_LIST_REQUEST, PRODUCT_LIST_SUCCESS } from "../constants/productConstants";
+const { PRODUCT_LIST_FAIL, PRODUCT_LIST_REQUEST, PRODUCT_LIST_SUCCESS } = require("../constants/productConstants");
 
 export const productListReducer = (state = {loading: true, products: [] }, action) =>{
     switch(action.type){
@@ -12,4 +12,4 @@ export const productListReducer = (state = {loading: true, products: [] }, actio
             return state;
     }
 
-}
+};
