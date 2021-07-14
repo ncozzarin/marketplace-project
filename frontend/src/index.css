@@ -201,7 +201,7 @@ img.large{
   color: var(--main-success);
 }
 
-.error{
+.danger{
   color: var(--main-error);
 }
 
