@@ -4,7 +4,7 @@
 
 :root{
   --main-bg-color: #2b4d2b;
-  --main-errorbg-color: #a02020;
+  --main-errorbg-color: #FF6666;
   --main-hover-color: #8f1d81;
   --main-clear200-color: #ffffff;
   --main-clear600-color: #c0c0c0;
@@ -12,7 +12,6 @@
   --rating-color: #f0c040;
   --main-success: #20a020;
   --main-error: #a02020;
-
 }
 
 html{
